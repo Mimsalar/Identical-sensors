@@ -1,0 +1,10 @@
+ fh1 = open('5ini352.fig');
+ fh2 = open('10ini352.fig');
+  fh3 = open('15ini352.fig');
+ ax1 = get(fh1, 'Children');
+ ax2 = get(fh2, 'Children');
+ ax3 = get(fh3, 'Children');
+ ax2p = get(ax2(1),'Children');
+ax3p = get(ax3(1),'children');
+ s=copyobj(ax2p, ax1(1));
+ copyobj(ax3p, ax1(1));
